@@ -12,8 +12,8 @@
   }
 
   body {
-    margin: 0px;
     box-sizing: border-box;
+    margin: 0px;
     padding-top: 3vh;
     background: repeating-linear-gradient(
       to bottom right,
