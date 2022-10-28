@@ -1,6 +1,9 @@
 # odin-recipes
 HTML and CSS practice website
 
+To do:
+change id to class for styling
+fix weird pattern on index page
 
 In this project I have practiced using Git.
 git clone SSH-URL; to pull from github repository.
