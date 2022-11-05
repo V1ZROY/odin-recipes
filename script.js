@@ -1,12 +1,18 @@
-const backstory = document.getElementsByClassName("backstory");
+const hidden = document.querySelectorAll(".hidden");
+//new variable to select element I want observed 
+//querySelectorAll creates an array of all elements with that css selector
 const options = {}
-// backstory.classList.remove("fade_in")
-const observer = new IntersectionObserver(entry => {
-    entry.forEach(entry => {
+//this variable is options for the Intersection observer
+const observer = new IntersectionObserver(
+    entries => {//function passed into intersection observer
+    entries.forEach(entry => {
         console.log(entry);
         entry.target.classList.toggle("fade_in", entry.isIntersecting)
     })
 }, 
-options)
+options//calling options which were defined earlier
+)
 
-observer.observe(backstory[0]);
+hidden.forEach(elem => {
+    observer.observe(elem)
+});

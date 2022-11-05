@@ -39,7 +39,7 @@
 
   #splash_image {
     height: auto;
-    width: 80vw;
+    max-width: 80vw;
     border-radius: 5px;
     margin-bottom: 20vh;
   }
@@ -50,11 +50,11 @@
     display: inline-block;
   }
   
-  .backstory{
+  .hidden{
     transform: none;
     opacity: 0;
     transition-property: transform, opacity;
-    transition-duration: 1s;
+    transition-duration: 0.6s;
     transition-timing-function: linear;
   }
  
@@ -86,6 +86,10 @@
       flex-direction: column;
       border-style: none;
 
+    }
+
+    #splash_image {
+      max-width: 120vw;
     }
     
     #page_navigation {
