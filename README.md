@@ -11,4 +11,4 @@ git add; to add files to staging area.
 git status; to see status of changes made.
 git log; to see log of commits.
 git commit -m "Commit message"; Try to limit to 52 characters.
-git push; to upload to githib.
+git push origin main; to upload to githib.
