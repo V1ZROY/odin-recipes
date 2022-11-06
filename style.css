@@ -6,12 +6,12 @@
     overflow-x: hidden;
     z-index: 1;/* Gives everything a default layer of 1*/
   }
-  section {
-    padding-top: 100px;
-  }
+  
   h1 {
+    width: 100%;
     font-size: 5vw;
     padding: 5vw;
+    background-color: #e7cba9;
   }
 
   ol {
@@ -29,7 +29,7 @@
     box-sizing: border-box;
     margin: 0px;
     height: 300vh;
-    background-color: #e7cba9;
+    background-color: #f5f3e7;
   }
 
   #page_navigation {
@@ -84,9 +84,14 @@
     padding: 1vw;
   }
 
+  section {
+    padding-top: 3vw;
+  }
+
+
   @media only screen and (max-width: 768px) {
     body {
-        padding-top: 10vh;
+        padding-top: 12vh;
     }
     #navlist {
       flex-direction: column;
@@ -96,6 +101,7 @@
 
     section {
       margin-top: 10px;
+      padding-top: 120px;
     }
 
     #splash_image{
